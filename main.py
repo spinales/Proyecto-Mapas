@@ -6,7 +6,7 @@ overpass_query = """
 [out:json];
 area["ISO3166-1"="DO"][admin_level=2];
 (
- way["hotel"](area);
+ way["highway"](area);
 );
 out center;
 """
