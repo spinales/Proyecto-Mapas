@@ -1,26 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import requests
-import json
-
-
-def ConsumingAPI():
-    overpass_url = "http://overpass-api.de/api/interpreter"
-    overpass_query = """
-    [out:json];
-    area["ISO3166-1"="DO"][admin_level=2];
-    (
-    way["highway"](area);
-    );
-    out center;
-    """
-    response = requests.get(overpass_url, 
-    params={'data': overpass_query})
-    data = response.json()
-    with open('data.json','w') as file:
-        json.dump(data, file, indent=4)
-
-
+import main
 
 def Descargar():
     win=tk.Toplevel()
@@ -29,8 +9,6 @@ def Descargar():
     win.configure(background='white')
     boton2 = tk.Button(win,text="Download",bg="dodger blue",fg="white")
     boton2.pack(padx=10,pady=20)
-
-
 
 def Principal(): 
     ventana = tk.Tk()
@@ -44,7 +22,7 @@ def Principal():
     combo = ttk.Combobox(ventana, state="readonly")
     combo["values"]=["Republica Dominicana"]
     combo.pack(padx=20,pady=5)
-    boton = tk.Button(ventana,text="Send",bg="dodger blue",fg="white",width="20",command=ConsumingAPI)
+    boton = tk.Button(ventana,text="Send",bg="dodger blue",fg="white",width="20",command= [main.Getdata(), ventana.quit()])
     boton.pack(padx=20,pady=10)
     ventana.mainloop()
 
