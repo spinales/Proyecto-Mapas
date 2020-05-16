@@ -13,7 +13,7 @@ Digamos que trabajas como delivery de un negocio de panes. Nuestra app te permit
 
 ### Ubuntu
 
-1. sudo apt-get install python3
+1. sudo apt install python3
 2. sudo apt install nodejs
 3. sudo apt install npm
 4. python principal.py
