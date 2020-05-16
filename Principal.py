@@ -22,7 +22,7 @@ def Principal():
     combo = ttk.Combobox(ventana, state="readonly")
     combo["values"]=["Republica Dominicana"]
     combo.pack(padx=20,pady=5)
-    boton = tk.Button(ventana,text="Send",bg="dodger blue",fg="white",width="20",command= [main.Getdata(), ventana.quit()])
+    boton = tk.Button(ventana,text="Send",bg="dodger blue",fg="white",width="20",command= main.Getdata())
     boton.pack(padx=20,pady=10)
     ventana.mainloop()
 

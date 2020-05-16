@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-mapas",
+  "version": "1.0.0",
+  "description": "convert OSM JSON to geojson",
+  "main": "convert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeathWofl/Proyecto-Mapas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeathWofl/Proyecto-Mapas/issues"
+  },
+  "homepage": "https://github.com/DeathWofl/Proyecto-Mapas#readme"
+}

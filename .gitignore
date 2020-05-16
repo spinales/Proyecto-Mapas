@@ -6,6 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
+#app files
+data.json
+calles.geojson.json
+
+#node
+.DS_Store
+node_modules
+/dist
+
 # Distribution / packaging
 .Python
 build/
