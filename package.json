@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DeathWofl/Proyecto-Mapas/issues"
   },
-  "homepage": "https://github.com/DeathWofl/Proyecto-Mapas#readme"
+  "homepage": "https://github.com/DeathWofl/Proyecto-Mapas#readme",
+  "dependencies": {
+    "osmtogeojson": "^3.0.0-beta.4"
+  }
 }
