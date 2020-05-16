@@ -15,7 +15,7 @@ def Principal():
     ventana.title("OSM Converter")
     ventana.geometry('200x150')
     ventana.resizable(width=False,height=False)
-    ventana.iconbitmap('icono.ico')
+    #ventana.iconbitmap('icono.ico')
     ventana.configure(background='white')
     etiqueta = tk.Label(ventana,text="Choose a country",bg='white')
     etiqueta.pack(padx=20,pady=5)
